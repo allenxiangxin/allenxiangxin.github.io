@@ -22,8 +22,8 @@ var options = {
         cylinder: false
     },
     material: {
-        size: 0.5,
-        opacity: 0.2
+        size: 0.8,
+        opacity: 0.4
     },
     slice : {
         frame_mode: false,
@@ -104,13 +104,13 @@ var PCO = {
         // self.chargeColor = new THREE.Color(0xffffff);
         self.chargeColor = new THREE.Color(0x0000ff);
         if (self.name == "Cerenkov") {
-            self.chargeColor = new THREE.Color(0xffff14);
+            self.chargeColor = new THREE.Color(0xffff14); //yellow
         }
         else if (self.name == "Attenuation") {
-            self.chargeColor = new THREE.Color(0xff0000);
+            self.chargeColor = new THREE.Color(0xff0000); //red
         }
         else if (self.name == "G4FastSimulationManagerProcess") {
-            self.chargeColor = new THREE.Color(0x00ff00);
+            self.chargeColor = new THREE.Color(0x00ff00); //green
         }
         self.material = new THREE.PointCloudMaterial({
             vertexColors    : true,
