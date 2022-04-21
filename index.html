@@ -1,12 +1,73 @@
-<html>
-  <body>
-    
-    <h2>Welcome!</h2>
-    You are the GOAT.
-    <img src="docs/goats.jpeg" class="img-responsive" alt="">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WbLS demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                color: #cccccc;
+                font-family:Monospace;
+                font-size:12px;
+                text-align:center;
 
-  </body>
+                background-color: #000000;
+                /*background-color: white;*/
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            #info {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                /*width: 100%;*/
+                padding: 10px;
+                text-align: left;
+            }
+            #statusbar {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding: 5px;
+            }
+            #container {
+                width: 85%;
+            }
+            a {color: #82beb7;}
+            .function {font-weight: bold;}
+            .key {color: orange; font-weight: bold;}
+
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+<!--         <div id="info"> |
+            <a href="#" id="play">play</a> |
+            <a href="#" id="prevEvent">prev event</a> <span class="key">p</span> |
+            <a href="#" id="nextEvent">next event</a> <span class="key">n</span> |
+            <a href="#" id="prevSlice">prev slice</a> <span class="key">j</span> |
+            <a href="#" id="nextSlice">next slice</a> <span class="key">k</span> |
+        </div> -->
+
+        <div id="info">
+            <h3 style="margin-bottom:0px; text-align:center; border:1px solid gray;">Optical Photon Process</h3><br/>
+
+	    <span style="color:green">opticalphoton</span><br/>
+            <span style="color:blue">Cerenkov</span><br/>
+            <span style="color:white">Transportation</span><br/>
+            <span style="color:red">Attenuation</span><br/>
+            <span style="color:magenta">G4FastSimulationManagerProcess</span><br/>
+        </div>
+
+        <script src="js/libs/jquery-2.1.4.min.js"></script>
+        <script src="js/libs/director.min.js"></script>
+        <script src="js/libs/dat.gui.min.js"></script>
+        <script src="js/libs/three.min.js"></script>
+        <script src="js/libs/OrbitControls.js"></script>
+        <script src="js/libs/screenfull.min.js"></script>
+
+        <script src="js/wbls.js"></script>
+
+    </body>
 </html>
-
-
-
